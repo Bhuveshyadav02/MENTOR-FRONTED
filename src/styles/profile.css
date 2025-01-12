@@ -1,0 +1,182 @@
+:root {
+  /* Colors */
+  --black: #09090c;
+  --grey: #fff;
+  --white: #fff;
+  --background: rgba(137, 171, 245, 0.37);
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+}
+.app{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.navss{
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+.sideNavbars{
+  z-index: 1;
+  flex: .2;
+  left:0;
+  
+}
+.sideNavbarss{
+  position: fixed;
+  top:8%;
+}
+.containers{
+  
+  display: flex;
+  flex-direction: row;
+}
+.contents{
+  flex:.9;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll; */
+  /* padding: 5% 10% 0 0; */
+}
+.mainSection{
+  padding: 8% 2% 0 2%;
+}
+
+.batchCard{
+  margin: 20px 0px;
+}
+
+.studentListTable{
+  padding: 10px 0% 0 0%;
+}
+
+.addButton{
+  text-align: right;
+}
+
+.editButton{
+  text-align: left;
+}
+
+.logoutBtn{
+  display: none;
+}
+
+.profiles{
+  
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  margin: 2% 2% 2% 0;
+}
+.profile1{
+  flex:.3;
+}
+.profile2{
+  flex:.7;
+}
+.card-collection{
+  display: flex;
+  flex-direction: column;
+  
+}
+.infotable{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.info{
+  margin: 0 3%;
+}
+/* .content1{
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+} */
+.buttonss{
+  margin: 3% 0;
+}
+.box{
+  width:100%;
+}
+.footer{
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.navs{
+  display: none;
+  
+}
+@media(max-width:1000px){
+  .prof-container{
+    justify-content: center;
+  }
+  .profiles{
+    padding: 10% 0 0 0 ;
+    flex-direction: column;
+    margin: 0;
+  }
+  .profile1{
+    padding: 0 0 5% 0;
+    margin: auto;
+    
+  }
+  .profile2{
+    flex:1;
+  }
+  .sideNavbars{
+    display: none;
+  }
+  .contents{
+    flex: 1;
+    padding: 0;
+  }
+  .navs{
+    display: inline-block;
+  }
+  .mainSection{
+    padding: 20% 2% 0 2%;
+  }
+  .logoutBtn{
+    display: block;
+  }
+}
+
+@media(max-width:800px){
+  .profiles{
+    padding: 15% 0 0 0 ;
+  }
+  .profile1{
+    padding: 0 0 5% 0;
+  }
+}
+
+
+.optionView{
+  margin-right: 5px !important;
+}
+a{
+  text-decoration: none !important;
+  color: inherit !important;
+}
